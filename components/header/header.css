@@ -1,0 +1,73 @@
+.header{
+    height: 154px;
+    margin: 20px 30px;
+}
+
+.header__banner{
+    height: 55px;
+    padding: 14px 0;
+    text-align: center;
+    background: var(--color-primary);
+    border-radius: 8px;
+}
+
+.banner__text{
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.banner__text::after{
+    content: "";
+    display: inline-block;
+    margin-left: 23px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/icons/arr.svg");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.header__nav{
+    height: 99px;
+    padding: 20px 132px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav__container{
+    display: flex;
+    justify-items: center;
+}
+
+.nav__logo{
+    margin-right: 50px;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item{
+    padding: 14px 24px;
+    text-align: center;
+}
+
+.nav__link{
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.nav__item:hover{
+    background-color: #F1F1F3;
+    border-radius: 8px;
+}
+
+.nav__actions{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,128 @@
+.footer {
+    margin-top: 142px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container {
+    width: 100%;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.footer__info {}
+
+.info__icon {
+    margin-bottom: 40px;
+}
+
+.info__content {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.info__content p {
+    display: inline-flex;
+    align-items: center;
+}
+
+.info__content p:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.info__mail::before {
+    margin-right: 6px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="%23262626"/><path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="%23262626"/></svg>');
+}
+
+.info__phone::before {
+    margin-right: 6px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 3C0.5 1.34315 1.84315 0 3.5 0H4.87163C5.732 0 6.48197 0.585557 6.69064 1.42025L7.79644 5.84343C7.97941 6.5753 7.70594 7.34555 7.10242 7.79818L5.8088 8.7684C5.67447 8.86915 5.64527 9.01668 5.683 9.11969C6.81851 12.2195 9.28051 14.6815 12.3803 15.817C12.4833 15.8547 12.6309 15.8255 12.7316 15.6912L13.7018 14.3976C14.1545 13.7941 14.9247 13.5206 15.6566 13.7036L20.0798 14.8094C20.9144 15.018 21.5 15.768 21.5 16.6284V18C21.5 19.6569 20.1569 21 18.5 21H16.25C7.55151 21 0.5 13.9485 0.5 5.25V3Z" fill="%23262626"/></svg>');
+
+}
+
+.info__address::before {
+    margin-right: 6px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="%23262626"/></svg>');
+
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list {
+    width: 249px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nav_list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list_item a{
+    font-size: 18px;
+    line-height: 150%;
+    color: #59595A;
+}
+
+.list_item{
+    margin-bottom: 8px;
+}
+
+.list__item-title {
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-text);
+}
+
+.nav__social {}
+
+.nav__social a:not(:last-child) {
+    margin-right: 14px;
+}
+
+.footer__rights {
+    border-top: 1px solid #F1F1F3;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    color: #656567;
+}
