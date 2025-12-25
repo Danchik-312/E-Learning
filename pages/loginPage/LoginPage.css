@@ -1,0 +1,239 @@
+.login__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 100px;
+}
+
+.login__content {
+    width: 829px;
+    padding: 100px 0;
+}
+
+.login__content .PageText__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 150%;
+}
+
+.login__content .PageText__text {
+    width: 100%;
+}
+
+.login__reviews {
+    margin-top: 80px;
+}
+
+.reviews__viewport {
+    width: 100%;
+    max-width: 829px;
+    overflow: hidden;
+}
+
+.reviews__track .content_item {
+    flex: 0 0 829px;
+}
+
+.reviews__track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.reviews__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.reviews__arrow {
+    margin-top: 30px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFFFFF;
+}
+
+.login-card {
+    background: #fff;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.login-card__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.login-card__subtitle {
+    color: #4C4C4D;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+
+.login-form {
+    margin-bottom: 30px;
+}
+
+.input-field {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.input-field__label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.input-field__input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.input-field__input:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-field__input::placeholder {
+    color: #a0aec0;
+}
+
+.login-form__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox__input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox__label {
+    color: #4a5568;
+    font-size: 14px;
+    user-select: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #4C4C4D;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+.link_accent {
+    color: var(--color-text);
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.button_primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.button_primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.button_social {
+    background: white;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.button_social:hover {
+    border-color: #cbd5e0;
+    background: #f7fafc;
+}
+
+.button__icon {
+    font-weight: 700;
+    color: #db4437;
+    font-size: 18px;
+}
+
+.separator {
+    position: relative;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.separator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.separator__text {
+    background: white;
+    padding: 0 20px;
+    color: #a0aec0;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+.login-card__footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+    color: #718096;
+    font-size: 16px;
+}
+
+.login-card__footer-text {
+    color: var(--color-text);
+}

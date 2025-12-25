@@ -8,6 +8,7 @@
 
 .footer__container {
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 .footer__content {
@@ -125,4 +126,134 @@
     font-size: 18px;
     line-height: 150%;
     color: #656567;
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        margin-top: 100px;
+    }
+
+    .footer__content {
+        margin: 80px 0;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .info__icon {
+        width: 120px;
+        margin-bottom: 24px;
+    }
+
+    .info__content {
+        font-size: 16px;
+    }
+
+    .list_item a {
+        font-size: 16px;
+    }
+
+    .list__item-title {
+        font-size: 18px;
+    }
+
+    .footer__nav {
+        justify-content: flex-start;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .footer__rights {
+        padding: 40px 0 20px;
+        font-size: 16px;
+    }
+}
+
+
+/* === MOBILE (max-width: 390px) === */
+@media (max-width: 390px) {
+    .footer {
+        margin-top: 60px;
+        padding: 20px 0;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__icon {
+        width: 90px;
+        margin-bottom: 20px;
+    }
+
+    .info__content {
+        font-size: 14px;
+        line-height: 140%;
+        align-items: center;
+    }
+
+    .info__content p:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav_list {
+        align-items: center;
+        width: auto;
+    }
+
+    .list_item {
+        margin-bottom: 6px;
+    }
+
+    .list_item a {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .list__item-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .nav__social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__social p {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .nav__social a img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav__social a:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .footer__rights {
+        padding: 24px 0 12px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
 }

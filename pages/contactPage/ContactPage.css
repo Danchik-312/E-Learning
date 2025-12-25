@@ -1,0 +1,129 @@
+.contact {
+    background-color: var(--color-bg);
+    padding: 80px 0;
+    font-family: var(--font-family);
+}
+
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* FORM */
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__label {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--color-muted);
+    background-color: var(--color-secondary);
+    font-size: 18px;
+    line-height: 150%;
+    outline: none;
+}
+
+.contact__textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: #999;
+}
+
+.contact__button {
+    align-self: center;
+    padding: 14px 28px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* INFO */
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__card {
+    background-color: #F1F1F3;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+.contact__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.contact__text {
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+
+.contact__socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.contact__social {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--color-text);
+}

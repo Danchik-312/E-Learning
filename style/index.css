@@ -2,6 +2,11 @@
 @import '../components/footer/footer.css';
 @import '../pages/coursesPage/CoursesPage.css';
 @import '../pages/coursesOpenPage/CoursesOpenPage.css';
+@import '../pages/aboutUsPage/AboutUsPage.css';
+@import '../pages/PricingPage/PricingPage.css';
+@import '../pages/LoginPage/LoginPage.css';
+@import '../pages/signupPage/SignupPage.css';
+@import '../pages/contactPage/ContactPage.css';
 @import "normalize.css";
 @import 'PageText.css';
 
@@ -12,11 +17,6 @@
     --color-text: #262626;
     --color-muted: #F1F1F3;
     --font-family: Be Vietnam Pro;
-}
-
-.html, body {
-    height: 100%;
-    margin: 0;
 }
 
 body{
@@ -467,3 +467,108 @@ body section {
     border-radius: 0 0 14px 14px;
 }
 
+/* faq */
+.faq {
+    margin-top: 150px;
+}
+
+.faq__container {
+    background-color: #FFFFFF;
+    padding: 100px;
+    display: flex;
+}
+
+.faq__titles {
+    margin-right: 120px;
+}
+.faq__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--color-text);
+}
+.faq__subtitle {
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.faq__btn {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-text);
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background-color: #FFFFFF;
+}
+
+.faq__content {}
+
+.faq__item {
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.faq__question {
+    padding: 41px 50px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-text);
+    cursor: pointer;
+    position: relative;
+}
+
+
+/* Arrow indicator */
+.faq__question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.faq__item--opened .faq__question::after {
+    content: '-';
+    transform: translateY(-50%) rotate(0deg);
+}
+
+/* Answer styles */
+.faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq__item--opened .faq__answer {
+    max-height: 200px;
+}
+
+.faq__answer-text {
+    padding: 0 20px 20px 20px;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Active state */
+.faq__item--opened {
+    border-color: #4a90e2;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
+}
+
+.faq__item--opened .faq__question {
+    background-color: #f5f9ff;
+}

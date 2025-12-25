@@ -1,10 +1,9 @@
 .header{
-    height: 154px;
+    height: auto;
     margin: 20px 30px;
 }
 
 .header__banner{
-    height: 55px;
     padding: 14px 0;
     text-align: center;
     background: var(--color-primary);
@@ -14,7 +13,7 @@
 .banner__text{
     color: #FFFFFF;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 150%;
 }
 
 .banner__text::after{
@@ -29,7 +28,6 @@
 }
 
 .header__nav{
-    height: 99px;
     padding: 20px 132px 24px;
     display: flex;
     justify-content: space-between;
@@ -71,3 +69,80 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 1440px) {
+    .header {
+        margin: 20px;
+    }
+
+    .header__banner {
+        padding: 10px 0;
+        border-radius: 6px;
+    }
+
+    .banner__text {
+        font-size: 14px;
+    }
+
+    .banner__text::after {
+        width: 12px;
+        height: 14px;
+    }
+
+
+    .header__nav {
+        padding: 16px 60px;
+    }
+
+    .nav__container {}
+
+    .nav__logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .nav__list {}
+
+    .nav__item {}
+
+    .nav__link {}
+
+    .nav__actions {}
+}
+
+@media (max-width: 390px) {
+    .header {
+
+    }
+
+    .header__banner {
+
+    }
+
+    .banner__text {
+
+    }
+
+    .banner__text::after {
+
+    }
+
+    .header__nav {
+
+    }
+
+    .nav__container {}
+
+    .nav__logo {
+
+    }
+
+    .nav__list {}
+
+    .nav__item {}
+
+    .nav__link {}
+
+    .nav__actions {}
+}
+

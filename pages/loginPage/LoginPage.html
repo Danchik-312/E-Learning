@@ -2,9 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../style/index.css">
+    <title>Login</title>
 </head>
 <body>
+    <header></header>
+    <div class="login__container _container">
+        <div class="login__content">
+            <h1 class="PageText__title">Student Testimonials</h1>
+            <p class="PageText__text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            <div class="login__reviews">
+                <div class="reviews__viewport">
+                    <div class="reviews__track">
+                        <div class="content_item">
+                            <p class="item__content">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                            <div class="item_info">
+                                <div class="info_person">
+                                    <img class="info_img" src="../../assets/images/Sarah.jpg" alt='person'>
+                                    <p class="info_name">Sarah L</p>
+                                </div>
+                                <button class="item__btn">Read Full Story</button>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <p class="item__content">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                            <div class="item_info">
+                                <div class="info_person">
+                                    <img class="info_img" src="../../assets/images/Jason.jpg" alt='person'>
+                                    <p class="info_name">Jason M</p>
+                                </div>
+                                <button class="item__btn">Read Full Story</button>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <p class="item__content">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                            <div class="item_info">
+                                <div class="info_person">
+                                    <img class="info_img" src="../../assets/images/Emily.jpg" alt='person'>
+                                    <p class="info_name">Emily R</p>
+                                </div>
+                                <button class="item__btn">Read Full Story</button>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <p class="item__content">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                            <div class="item_info">
+                                <div class="info_person">
+                                    <img class="info_img" src="../../assets/images/Michael.jpg" alt='person'>
+                                    <p class="info_name">Michael K</p>
+                                </div>
+                                <button class="item__btn">Read Full Story</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__btns">
+                    <button class="reviews__arrow reviews__arrow--prev">←</button>
+                    <button class="reviews__arrow reviews__arrow--next">→</button>
+                </div>
+            </div>
+        </div>
+        <div class="login-card">
+            <h1 class="login-card__title">Login</h1>
+            <p class="login-card__subtitle">Welcome back! Please log in to access your account.</p>
 
+            <form class="login-form">
+                <div class="input-field">
+                    <label class="input-field__label" for="email">Email</label>
+                    <input class="input-field__input" type="email" id="email" placeholder="Enter your Email">
+                </div>
+
+                <div class="input-field">
+                    <label class="input-field__label" for="password">Password</label>
+                    <input class="input-field__input" type="password" id="password" placeholder="Enter your Password">
+                </div>
+
+                <div class="login-form__options">
+                    <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox">
+                        <span class="checkbox__label">Remember Me</span>
+                    </label>
+
+                    <a class="link login-form__forgot-link" href="#">Forgot Password?</a>
+                </div>
+
+                <button class="button button_primary login-form__submit" type="submit">Login</button>
+            </form>
+
+            <div class="separator">
+                <span class="separator__text">OR</span>
+            </div>
+
+            <button class="button button_social">
+                <span class="button__icon">G</span>
+                <span class="button__text">Login with Google</span>
+            </button>
+
+            <div class="login-card__footer">
+                <span class="login-card__footer-text">Don't have an account?</span>
+                <a class="link link_accent" href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
